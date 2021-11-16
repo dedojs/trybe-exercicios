@@ -1,0 +1,26 @@
+16/11/2021
+Git e Git Hub
+Instalando git = sudo apt-get install git-all
+configurando git = git config --global "user_name"
+                 = git config --global "user-email "xandresousax@gmail.com"
+para acessar o terminal pelo Visual Code = code .gitconfig
+visualizando versão = git --version
+visualizando informações = git config --list
+gerando ssh = ssh-keygen -t rsa -b 4096 - C "xandresousax@gmail.com
+digite o passphrase
+Adicionar SSH ao ssh-agent = eval "$(ssh-agent -s)"
+ssh-add /~.ssh/id_rsa
+
+Instalar Xclip
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+ou
+cat ~/.ssh/id_rsa.pub
+
+Acesse o GitHub
+settings
+na barra lateral esquerda, clique em SSH and GPG keys
+clique em NEW SSH KEY OU ADD SSH KEY
+no campo titulo, adicione uma descrição para a chave
+cole sua chave dentro do campo key
+clique em ADD SSH KEY
