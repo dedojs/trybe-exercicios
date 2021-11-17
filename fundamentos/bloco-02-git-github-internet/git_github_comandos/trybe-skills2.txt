@@ -6,4 +6,7 @@ O que eu vou aprender na Trybe:
 - React
 - HTMl
 - CSS
-C++
+- C++
+- JavaScript
+- Python
+
