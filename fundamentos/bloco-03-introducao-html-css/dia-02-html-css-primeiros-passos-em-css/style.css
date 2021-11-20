@@ -1,0 +1,27 @@
+h2{
+    color:rgb(65, 100, 7)
+}
+body{
+    background-color: rgb(217, 241, 178);
+}
+
+#extinct{
+    background-color: chartreuse;
+}
+
+#linha{
+    background-color: crimson;
+
+
+}
+
+#description{
+    color: orange;
+}
+
+.list-style{
+    background-color: darkmagenta;
+    color: white;
+
+}
+
