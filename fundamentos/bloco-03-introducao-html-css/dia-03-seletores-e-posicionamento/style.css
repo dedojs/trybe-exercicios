@@ -12,3 +12,31 @@
     width: 500px;
     
 }
+
+#btn {
+    width: 50px;
+    height: 30px;
+    border-style: solid;
+    border-color: coral;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    background-color:khaki ;
+    cursor: pointer;
+    
+}
+
+#btn:hover{
+    width: 50px;
+    height: 30px;
+    border-style: solid;
+    border-color: coral;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    background-color:lawngreen ;
+    cursor: pointer;
+    
+}
