@@ -7,7 +7,7 @@
   .goomba {
     width: 100px;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 360px;
     left: 110px;
   }
