@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    font-family: monospace;
     
 }
 
@@ -12,7 +13,7 @@ h1{
     font-size: 60px;
     color:red;
     text-align: center;
-
+    
 }
 
 .desc{
@@ -32,6 +33,7 @@ h1{
     position: relative;
     left: 800px;
     top: 60px;
+    
       
 
 }
@@ -42,4 +44,29 @@ h1{
     margin: 100px 0;
     
 
+}
+
+.botao-menu{
+    color: white;
+    max-width: 90px;
+    height: 70px;
+    font-size: 30px;
+    position: relative;
+    left: 1139px;
+    top: 54px;
+    padding-top: 20px;
+    margin-top: 10px;
+    text-align: center;
+
+    
+}
+
+.botao-menu:hover{
+    
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px 2px rgb(159, 174, 194);
+    border-radius: 25%;
 }

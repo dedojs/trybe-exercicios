@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* parte 1 = header */
+
+.header h1{
+    color: rgb(2, 114, 2);
+    font-size: 42px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+h2{
+    color:rgb(2, 128, 2);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.header{
+    background-image: url(/dia03_aulavivo/sd-019-c-live-lectures/images/smiling-image.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: 0% 25%;
+    padding: 100px 200px;
+}
+
+.desc-header{
+    width: 50%;
+    
+}
+
+/*---------------------------------*/
+
+/* parte 2 market */
+
+.market{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
+
+}
+
+/*-----------------------*/
+
+/* parte 3 container */
+
+.imag{
+    border-radius: 100%;
+    width: 120px;
+}
+
+.container{
+    
+    margin-bottom: 5px;
+    height: 400px;
+    
+    
+}
+.tres{
+    
+    
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.invidual{
+    width: 25%;
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+}
+
+/*---------------------------------------------------------
+
+ /* parte 4 */
+
+ 
+    
