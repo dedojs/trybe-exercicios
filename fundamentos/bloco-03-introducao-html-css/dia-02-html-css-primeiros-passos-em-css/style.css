@@ -1,0 +1,86 @@
+h2{
+    color:rgb(65, 100, 7)
+}
+body{
+    background-color: rgb(217, 241, 178);
+}
+
+#extinct{
+    background-color: chartreuse;
+}
+
+#linha{
+    background-color: crimson;
+
+
+}
+
+#description{
+    color: orange;
+}
+
+.list-style{
+    background-color: darkmagenta;
+    color: white;
+
+}
+
+.quadrado{
+    border:solid black;
+    background-color: white;
+    box-shadow:red 30%;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.botao{
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    width:200px;
+    text-align: center;
+    padding: 5px;
+    text-decoration:none;
+    padding: 10px;
+
+}
+
+.botao:hover{
+    background-color: white;
+    color:green;
+    
+}
+
+.botao a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.notao a:active{
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    border: green;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.box{
+    width: 800px;
+    height: 500px;
+    background-color:white   ;
+    box-shadow:  2px 10px 10px 10px black;
+    position: relative;
+    left: 500px;
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 20px;
+    overflow: auto;
+
+}
+
