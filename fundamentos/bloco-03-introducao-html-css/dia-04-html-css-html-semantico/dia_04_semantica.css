@@ -1,0 +1,72 @@
+*{
+    margin: 1;
+    padding: 0;
+}
+.titulo{
+    border: 1px solid green;
+}
+nav{
+    border: 1px solid blue;
+    
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 200px;
+
+
+}
+
+nav li:hover{
+    background-color: chartreuse;
+    
+}
+
+main{
+    border: 1px solid red;
+}
+
+section{
+    border: 3px solid yellow;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    
+}
+
+article {
+    border: 1px solid brown;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin-left: 20px;    
+}
+
+footer{
+    border: 1px solid violet;
+    
+}
+
+aside{
+    border: 1px solid purple;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    height: 400px;
+    line-height: 30px;
+    
+    
+}
+
+.sec2{
+    text-align: center;
+    border: 1px solid red;
+    
+
+}
+
+.sec1{
+    width: 80%;
+}
+
