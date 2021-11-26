@@ -95,3 +95,38 @@ else{
 /*---------------*/
 /* ! not */
 
+const squirtle = "melhor pokemon inicial";
+
+console.log(!squirtle); // false
+
+console.log(!42); // false
+
+console.log(!0); // true
+// O número 0 tem o valor "falsy" no javascript. Logo, seu oposto é true.
+
+console.log(!null); // true
+
+console.log(!undefined); // true
+
+/*---------------*/
+/* Switch e Casa */
+
+let situacao = "sem resultado"
+
+switch (situacao){
+    case "aprovada":
+        console.log("Você foi aprovada")
+        break;
+    case "lista":
+        console.log("Você está na lista de espera");
+        break;
+    case "reprovada":
+        console.log("Você foi reprovada")
+        break;
+    default:
+        console.log("não se aplica")
+}
+
+
+
+    
