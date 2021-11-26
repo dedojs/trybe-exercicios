@@ -222,15 +222,18 @@ footer{
 }
 
 
-.ref{
+.ref {
     margin-top: 50px;
     text-align: center;
     margin-bottom: 50px;
+    padding: 0;
 }
 
 
 
-.ref li a{
+
+
+.ref ol li a{
     color: black;
     text-decoration: none;
     display: inline-block;
@@ -286,8 +289,9 @@ footer{
         margin-top: 30px;
     }
 
-    .video_div{
-        display: none;
+    .vid_you{
+        width: 300px;
+        margin-bottom: 20px;
     }
 
     .artigo1, .artigo2, .artigo3, .desc_foto img{
@@ -305,7 +309,14 @@ footer{
         
     }
 
-    
+    #m1, #m2{
+        display: none;
+    }
+
+    .ref ol{
+        margin-left: -55px;
+        
+    }
 
 
 }
