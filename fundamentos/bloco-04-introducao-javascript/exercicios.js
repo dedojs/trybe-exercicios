@@ -8,28 +8,27 @@ Módulo (a % b)*/
 var a = 10;
 var b = 8;
 
-var adicao = (a+b);
-var subtracao = (a-b);
-var multiplicacao = (a*b);
-var divisao = (a/b);
-var modulo = (a%b);
+var adicao = a + b;
+var subtracao = a - b;
+var multiplicacao = a * b;
+var divisao = a / b;
+var modulo = a % b;
 
-console.log(adicao)
-console.log(subtracao)
-console.log(multiplicacao)
-console.log(divisao)
-console.log(modulo)
+console.log(adicao);
+console.log(subtracao);
+console.log(multiplicacao);
+console.log(divisao);
+console.log(modulo);
 
 /* 2 Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados. */
 
 var x = 80;
 var y = 50;
 
-if(x>y){
-    console.log("x = " + x + " é o maior valor")
-}
-else{
-    console.log("y = " + y + " é o maior valor")
+if (x > y) {
+  console.log("x = " + x + " é o maior valor");
+} else {
+  console.log("y = " + y + " é o maior valor");
 }
 
 /* 3 Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados. */
@@ -38,28 +37,24 @@ var x = 98;
 var y = 12;
 var z = 9;
 
-if(x>y && x>z){
-    console.log(x)
-}
-else if (y>x && y>z){
-    console.log(y)
-}
-else if(z>x && z>y){
-    console.log(z)
+if (x > y && x > z) {
+  console.log(x);
+} else if (y > x && y > z) {
+  console.log(y);
+} else if (z > x && z > y) {
+  console.log(z);
 }
 
 /* 4 Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário. */
 
-const result=-85
+const result = -85;
 
-if(result>0){
-    console.log("positive")
-}
-else if(result<0){
-    console.log("negative")
-}
-else{
-    console.log("zero")
+if (result > 0) {
+  console.log("positive");
+} else if (result < 0) {
+  console.log("negative");
+} else {
+  console.log("zero");
 }
 
 /* 5 Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro. 
@@ -70,16 +65,14 @@ var x = 45;
 var y = 45;
 var z = -90;
 
-var soma = x+y+z;
+var soma = x + y + z;
 
-if(soma === 180){
-    console.log(true)
-}
-else if(soma < 180 && soma > 0){
-    console.log(false)
-}
-else{
-    console.log("Ângulo inválido")
+if (soma === 180) {
+  console.log(true);
+} else if (soma < 180 && soma > 0) {
+  console.log(false);
+} else {
+  console.log("Ângulo inválido");
 }
 
 /* 6 Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
@@ -91,28 +84,30 @@ Exemplo: bishop (bispo) -> diagonals (diagonais)*/
 var peca = "jumento";
 var xadrez = peca.toLowerCase();
 
-
-switch(xadrez){
-    case "peao":
-        console.log(xadrez.toUpperCase() + " => Verticalmente para frente")
-        break;
-    case "torre":
-        console.log(xadrez.toUpperCase() + " => Vertical e Horizontal")
-        break;
-    case "cavalo":
-        console.log(xadrez.toUpperCase() + " => 5 casas em formato de L")
-        break;
-    case "bispo":
-        console.log(xadrez.toUpperCase() + " => Diagonal")
-        break;
-    case "rainha":
-        console.log(xadrez.toUpperCase() + " => Vertical, Horizontal e Diagonal")
-        break;
-    case "rei":
-        console.log(xadrez.toUpperCase() + " => Vertical, Horizontal e Diagonal, apenas 1 casa")
-        break;
-    default:
-        console.log("Peça inválida")
+switch (xadrez) {
+  case "peao":
+    console.log(xadrez.toUpperCase() + " => Verticalmente para frente");
+    break;
+  case "torre":
+    console.log(xadrez.toUpperCase() + " => Vertical e Horizontal");
+    break;
+  case "cavalo":
+    console.log(xadrez.toUpperCase() + " => 5 casas em formato de L");
+    break;
+  case "bispo":
+    console.log(xadrez.toUpperCase() + " => Diagonal");
+    break;
+  case "rainha":
+    console.log(xadrez.toUpperCase() + " => Vertical, Horizontal e Diagonal");
+    break;
+  case "rei":
+    console.log(
+      xadrez.toUpperCase() +
+        " => Vertical, Horizontal e Diagonal, apenas 1 casa"
+    );
+    break;
+  default:
+    console.log("Peça inválida");
 }
 
 /* 7 Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
@@ -124,53 +119,46 @@ Porcentagem >= 50 -> E
 Porcentagem < 50 -> F
 O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100. */
 
-var nota = 85.5
+var nota = 85.5;
 
-if(nota>=90){
-    console.log("A")
-}
-else if(nota >= 80){
-    console.log("B")
-}
-else if(nota>=70){
-    console.log("C")
-}
-else if(nota>=60){
-    console.log("D")
-}
-else if(nota>=50){
-    console.log("E")
-}
-else if(nota<50){
-    console.log("F")
+if (nota >= 90) {
+  console.log("A");
+} else if (nota >= 80) {
+  console.log("B");
+} else if (nota >= 70) {
+  console.log("C");
+} else if (nota >= 60) {
+  console.log("D");
+} else if (nota >= 50) {
+  console.log("E");
+} else if (nota < 50) {
+  console.log("F");
 }
 
 /* 8 Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
 Bonus: use somente um if . */
 
-const r = 81
-const k = 241
-const p = 9372
+const r = 81;
+const k = 241;
+const p = 9372;
 
-if(r%2 == 0 || k%2 == 0 || p%2 == 0){
-    console.log(true, "par")
-}
-else{
-    console.log(false)
+if (r % 2 == 0 || k % 2 == 0 || p % 2 == 0) {
+  console.log(true, "par");
+} else {
+  console.log(false);
 }
 
 /*9 Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
 Bonus: use somente um if .*/
 
-const r1 = 81
-const k1 = 241
-const p1 = 9372
+const r1 = 81;
+const k1 = 241;
+const p1 = 9372;
 
-if(r1%2 == 1 || k1%2 == 1 || p1%2 == 1){
-    console.log(true, "impar")
-}
-else{
-    console.log(false)
+if (r1 % 2 == 1 || k1 % 2 == 1 || p1 % 2 == 1) {
+  console.log(true, "impar");
+} else {
+  console.log(false);
 }
 
 /* 10 Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
@@ -180,17 +168,16 @@ O lucro de um produto é o resultado da subtração do valor de venda pelo custo
 valorCustoTotal = valorCusto + impostoSobreOCusto
 lucro = valorVenda - valorCustoTotal (lucro de um produto) */
 
-const custo = 100
-const venda = 150
-var vendidos = 100
-var imposto = custo * 0.20 + custo
-var lucro = (venda * vendidos)-(imposto*vendidos)
+const custo = 100;
+const venda = 150;
+var vendidos = 100;
+var imposto = custo * 0.2 + custo;
+var lucro = venda * vendidos - imposto * vendidos;
 
-if(custo == 0 || venda ==0){
-    console.log("ERRO na informação dos valores")
-}
-else{
-    console.log("O lucro foi de ", lucro)
+if (custo == 0 || venda == 0) {
+  console.log("ERRO na informação dos valores");
+} else {
+  console.log("O lucro foi de ", lucro);
 }
 
 /*Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
@@ -234,28 +221,24 @@ Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
 Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
 Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88*/
 
-
 var inss = 0;
 var ir = 0;
 var salarioBruto = 3000;
 var salarioBase = 0;
 var salarioLiquido = salarioBase - ir;
 
-if(salarioBruto > 5189.82){
-    inss = 570.88
-    salarioBase = salarioBruto - inss;
-}
-else if(salarioBruto > 2594.93){
-    inss = salarioBruto*0.11
-    salarioBase = salarioBruto - inss;
-}
-else if(salarioBruto > 1556.95){
-    inss = salarioBruto*0.09
-    salarioBase = salarioBruto - inss;
-}
-else if(salarioBruto <= 1556.94){
-    inss = salarioBruto * 0.08
-    salarioBase = salarioBruto - inss;
+if (salarioBruto > 5189.82) {
+  inss = 570.88;
+  salarioBase = salarioBruto - inss;
+} else if (salarioBruto > 2594.93) {
+  inss = salarioBruto * 0.11;
+  salarioBase = salarioBruto - inss;
+} else if (salarioBruto > 1556.95) {
+  inss = salarioBruto * 0.09;
+  salarioBase = salarioBruto - inss;
+} else if (salarioBruto <= 1556.94) {
+  inss = salarioBruto * 0.08;
+  salarioBase = salarioBruto - inss;
 }
 
 /*Até R$ 1.903,98: isento de imposto de renda
@@ -264,26 +247,21 @@ De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir 
 De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
 Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.*/
 
-
-if(salarioBase> 4664.68){
-    ir = salarioBase * 0.275 - 869.36
-    salarioLiquido = salarioBase - ir;
-}
-else if(salarioBase > 3751.06){
-    ir = salarioBase * 0.225 - 636.13
-    salarioLiquido = salarioBase - ir;
-}
-else if(salarioBase > 2826.66){
-    ir = salarioBase * 0.15 - 354.80
-    salarioLiquido = salarioBase - ir;
-}
-else if(salarioBase > 1903,99){
-    ir = (salarioBase * 0.075) - 142.80
-    salarioLiquido = salarioBase - ir;
-}
-else if(salarioBase <= 1903,98){
-    ir = 0
-    salarioLiquido = salarioBase - ir;
+if (salarioBase > 4664.68) {
+  ir = salarioBase * 0.275 - 869.36;
+  salarioLiquido = salarioBase - ir;
+} else if (salarioBase > 3751.06) {
+  ir = salarioBase * 0.225 - 636.13;
+  salarioLiquido = salarioBase - ir;
+} else if (salarioBase > 2826.66) {
+  ir = salarioBase * 0.15 - 354.8;
+  salarioLiquido = salarioBase - ir;
+} else if ((salarioBase > 1903, 99)) {
+  ir = salarioBase * 0.075 - 142.8;
+  salarioLiquido = salarioBase - ir;
+} else if ((salarioBase <= 1903, 98)) {
+  ir = 0;
+  salarioLiquido = salarioBase - ir;
 }
 
 /*O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
@@ -294,5 +272,13 @@ console.log("salario base ", salarioBase)
 console.log("ir ", ir)
 console.log("salario liquido " + salarioLiquido)*/
 
-console.log("Recendo um sálario bruto de "+ salarioBruto.toFixed(2) + " se desconta R$ " + inss.toFixed(2) + " de INSS e R$ " + ir.toFixed(2) + " de IR. Restando um salário líquido de R$ " + salarioLiquido.toFixed(2) )
-
+console.log(
+  "Recendo um sálario bruto de " +
+    salarioBruto.toFixed(2) +
+    " se desconta R$ " +
+    inss.toFixed(2) +
+    " de INSS e R$ " +
+    ir.toFixed(2) +
+    " de IR. Restando um salário líquido de R$ " +
+    salarioLiquido.toFixed(2)
+);
