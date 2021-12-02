@@ -59,7 +59,7 @@ console.log('')
   let livro = books[0]
   //console.log(livro.titulo)
   console.log('O livro favorito de '+ leitor.nome +' ' + leitor.sobrenome + ' se chama ' + "'" + livro.titulo + "'")
-
+console.log(leitor.livrosFavoritos[0].titulo)
   //7
   leitor.livrosFavoritos.push(
     {
