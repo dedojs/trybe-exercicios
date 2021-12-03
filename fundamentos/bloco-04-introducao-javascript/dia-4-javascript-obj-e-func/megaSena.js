@@ -9,7 +9,7 @@ let mega = generateGame(6)
 console.log(mega)
 
 let game =[5,6,9,8,7,3]
-
+/*
 function jogomegaSena(game, mega){
     let acertados =[]
     let count = 0
@@ -35,4 +35,4 @@ function jogomegaSena(game, mega){
 
 console.log(game)
 
-console.log(jogomegaSena(game, generateGame(6)))
+console.log(jogomegaSena(game, generateGame(6)))*/

@@ -79,12 +79,12 @@ let nums5 = [2, 3, 2, 5, 8, 2, 3]
 
 function repeat (ar){
     let cont = 0
-    let ordenado = ar.sort()
+    ar.sort()
     let rep = []
     let rep2=[]
     
     for(i=0;i<ar.length-1;i+=1){
-        
+        console.log(ar[i],ar[i+1])
         if(ar[i]===ar[i+1]){
             rep.push(ar[i])
         }
@@ -99,7 +99,7 @@ function repeat (ar){
     
 }
 
-//repeat(nums5)
+repeat(nums5)
 
 //6 
 
