@@ -42,6 +42,24 @@
       </section>
     </main>
     <script>
+        document.getElementsByTagName('p')[1].innerText ='Trabalhando como Dev, em uma ótima empresa e feliz!'
+        let main = document.getElementsByClassName('main-content')
+        for(let i = 0; i<main.length;i+=1){
+          main[0].style.backgroundColor = 'rgb(76,164,109)'
+        }
+        let center = document.getElementsByClassName('center-content')
+        for(let i = 0; i<center.length;i+=1){
+          center[0].style.backgroundColor = 'white'
+        }
+        document.querySelector('.title').innerText= 'Exercício 5.1 - JavaScript';
+        let pa = document.querySelectorAll('p')
+        for(let i = 0; i<pa.length;i+=1){
+          pa[i].style.textTransform = 'uppercase';
+          console.log(pa[i])
+        }
+
+
+
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
@@ -54,6 +72,7 @@
         Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+       
     </script>
   </body>
 </html>
