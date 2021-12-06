@@ -15,6 +15,9 @@ main.appendChild(section)
 section.className = 'center-content'
 
 //4 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+let p = document.createElement('p')
+section.appendChild(p)
+p.innerText='Estudar na Trybe é muito bom'
 
 
 
