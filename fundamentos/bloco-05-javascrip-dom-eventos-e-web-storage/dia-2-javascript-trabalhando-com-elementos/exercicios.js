@@ -46,7 +46,12 @@ for(let i = 0; i<listaItens.length; i+=1){
     lista.appendChild(numListItem)
 }
 
-//9 
+//9 Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+for(let i = 0; i<3; i+=1){
+    let h3 = document.createElement('h3')
+    h3.innerText='teste'
+    main.appendChild(h3)
+}
 
 
 
