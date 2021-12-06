@@ -35,3 +35,18 @@ image.className ='small-image'
 image.src = 'https://picsum.photos/200'
 section2.appendChild(image)
 
+//8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+let listaItens = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+let lista = document.createElement('ul')
+section3.appendChild(lista)
+
+for(let i = 0; i<listaItens.length; i+=1){
+    let numListItem = document.createElement('li')
+    numListItem.innerText = listaItens[i]
+    lista.appendChild(numListItem)
+}
+
+//9 
+
+
+
