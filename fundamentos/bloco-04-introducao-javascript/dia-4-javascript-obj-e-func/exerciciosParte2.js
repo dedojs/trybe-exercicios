@@ -75,7 +75,7 @@ function max_char(array){
 
 //5 
 
-let nums5 = [2, 3, 2, 5, 8, 2, 3]
+let nums5 = [2, 3, 2, 5, 8, 2, 3,3,3,3]
 
 function repeat (ar){
     let cont = 0
@@ -89,13 +89,17 @@ function repeat (ar){
             rep.push(ar[i])
         }
     }
+   
     for(i=0;i<rep.length;i+=1){
         if(rep[i]==rep[i+1]){
             rep2.push(rep[i])
         }
     }
+    }
+    
 
-    console.log(rep2[0])
+
+    console.log(rep2)
     
 }
 
@@ -135,7 +139,7 @@ function string (a,b){
     
 }
 
-console.log(string('joaofernando', 'nando'))
+// console.log(string('joaofernando', 'nando'))
 
 
 

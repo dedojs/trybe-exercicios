@@ -1,6 +1,8 @@
 let n = 5;
-let linha = "";
+let linha = '';
+
 for (let i = n; i > 0; i -= 1) {
-  linha += "*";
+  linha += '*';
   console.log(linha)
 }
+

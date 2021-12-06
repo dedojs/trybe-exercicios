@@ -1,20 +1,13 @@
 let n = 5;
 let linha = "";
-let espaco = ''
-for (let i = n; i > 0; i -= 1) {
-  i--
-  ;
-  
-  
-  //console.log(espaco, linha)
-
-for (let i = n; i > 0; i -= 1) {
-  espaco += "*";
-  i--
-  
-console.log(espaco)
+let espa= ''
+for (let i = 0; i < n; i += 1) {
+  linha += "*";
+ 
 }
-//console.log(espaco, linha)
+for (x = 0; x < n; x += 1) {
+  console.log(linha);
+  
 }
 
 

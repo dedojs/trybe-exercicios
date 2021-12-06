@@ -55,7 +55,7 @@ console.log(cont)
     
 }
 
-//repeat(nums5)
+repeat(nums5)
 /*
 var counts = {};
 nums5.forEach(function(x) { counts[x] = (counts[x] || 0)+1; });
