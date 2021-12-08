@@ -4,12 +4,7 @@ const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 let list = [firstLi, secondLi, thirdLi]
- /*for(let i = 0; i<list.length; i+=1){
-            console.log(list[i])
-        }*/
-
-
-
+ 
 // 1. Copie esse arquivo e edite apenas ele;
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre? 

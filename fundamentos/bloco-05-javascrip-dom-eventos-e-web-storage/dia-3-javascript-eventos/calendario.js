@@ -3,7 +3,7 @@ const botaoSextaFeira = document.createElement("button");
 const btnContainer = document.querySelector(".buttons-container");
 const daysMonth = document.getElementById("days");
 const myTasks = document.querySelector(".my-tasks");
-const taskList = document.querySelector('.task-list')
+const taskList = document.querySelector(".task-list");
 
 function createDaysOfTheWeek() {
   const weekDays = [
@@ -188,13 +188,11 @@ function captions(color) {
 
 captions("green");
 
-
 /*9 Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
 Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada. */
 
 let divItem = document.getElementById("taskDiv");
 function select() {
-  
   divItem.addEventListener("click", function (element) {
     if (divItem.className == "task") {
       element.target.className = "task selected";
@@ -210,29 +208,26 @@ select();
 Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .*/
 
 function insertTask() {
-
   let count3 = 0;
   dezDays.addEventListener("click", function (element) {
+    //------------------------------------------
+    let color = "";
 
-  //------------------------------------------  
-  let color = ''
-
-  if(divItem.className === 'task selected'){
-    color=divItem.style.backgroundColor
-  }else if(divItem.className ==='task'){
-    color='rgb(119,119,119)' 
-  }
-  //--------------------------------
+    if (divItem.className === "task selected") {
+      color = divItem.style.backgroundColor;
+    } else if (divItem.className === "task") {
+      color = "rgb(119,119,119)";
+    }
+    //--------------------------------
 
     let alvo = element.target;
-    console.log(color)
-    console.log(divItem.className, ' + ', divItem.style.backgroundColor)
+    console.log(color);
+    console.log(divItem.className, " + ", divItem.style.backgroundColor);
     count3 += 1;
     //alvo.style.color=color
     console.log(alvo);
     console.log(count3);
     alvo.style.color = color;
-
   });
 }
 
@@ -247,25 +242,31 @@ Se nenhum caractere for inserido no campo input , a função deve retornar um al
 Ao pressionar a tecla "enter" o evento também deverá ser disparado.
 Dica - Propriedade: key .*/
 
-const inputTexto = document.querySelector('#task-input')
-const btnAdd = document.querySelector('#btn-add')
+const inputTexto = document.querySelector("#task-input");
+const btnAdd = document.querySelector("#btn-add");
 
-btnAdd.addEventListener('click',writeTask)
+btnAdd.addEventListener("click", writeTask);
 
-btnAdd.addEventListener('keyup',writeTask)
+btnAdd.addEventListener("keyup", writeTask);
 
-
-function writeTask(event){
-  
-  let texto = inputTexto.value
-  if(inputTexto.value == ''){
-    alert('Campo Vazio! Digite sua Tarefa')
+function writeTask(event) {
+  let texto = inputTexto.value;
+  if (inputTexto.value == "") {
+    alert("Campo Vazio! Digite sua Tarefa");
   }
-  let task = document.createElement('li')
-  task.className = 'task-list-item'
-  task.innerHTML = texto
-  taskList.appendChild(task)
-
-
+  let task = document.createElement("li");
+  task.className = "task-list-item";
+  task.innerHTML = texto;
+  taskList.appendChild(task);
 }
 
+//12 adicionar um link em uma data
+
+let diaD = dezDays.children[8];
+diaD.style.color = "red";
+diaD.style.cursor = "pointer";
+diaD.addEventListener("dblclick", redirect);
+
+function redirect(element) {
+  element.target = window.open("./exercicio1.html", "_blanck");
+}
