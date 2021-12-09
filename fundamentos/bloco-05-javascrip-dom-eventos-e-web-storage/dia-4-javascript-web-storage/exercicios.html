@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exxercicio.css" type="text/css">
+    <title>Web Storage</title>
+</head>
+<body id ='body'>
+
+    <header>
+    <h1>Web Storage</h1>
+    <menu>
+        <label for='corFundo'>Background Color</label>
+        <select name="corFundo" id="back">
+            <option class="optionBack" value = 'white'>Branco</option>
+            <option class="optionBack" value = 'black'>Preto</option>
+        </select>
+
+        <label class='label'    for='cortexto'>Text Color</label>
+        <select name="cortexto" id="text">
+            <option class="optiontext" value = 'white'>Branco</option>
+            <option class="optiontext" value = 'black'>Preto</option>
+            <option class="optiontext" value = 'yellow'>Amarelo</option>
+            <option class="optiontext" value = 'red'>Vermelho</option>
+            <option class="optiontext" value = 'green'>Verde</option>
+            <option class="optiontext" value = 'blue'>Azul</option>
+        </select>
+
+        <label class='label'    for='tamFonte'>Tamanho Fonte</label>
+        <select name="tamFonte" id="font">
+            <option class="optionfont" value = '20px'>Pequena</option>
+            <option class="optionfont" value = '30px'>Média</option>
+            <option class="optionfont" value = '40px'>Grande</option>
+        </select>
+
+        <label class='label'    for='space'>Espaço entre linhas</label>
+        <select name="space" id="space">
+            <option class="optionspace" value = '30px'>Pequena</option>
+            <option class="optionspace" value = '40px'>Média</option>
+            <option class="optionspace" value = '60px'>Grande</option>
+        </select>
+
+        <label class='label'    for='family'>Fonte Family</label>
+        <select name="family" id="family">
+            <option class="optionfamily" value = 'Arial, Helvetica, sans-serif'>Arial</option>
+            <option class="optionfamily" value = 'Courier New , Courier, monospace' >Courie New</option>
+            <option class="optionfamily" value = 'Times New Roman, Times, serif'>Times New Roman</option>
+        </select>
+        <div id="teste"></div>
+        
+    </menu>
+    </header>
+    <section id="lorem">
+        <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam ducimus quia perspiciatis excepturi debitis praesentium. Excepturi ipsam omnis tempora eveniet aspernatur, aliquam vero sapiente quod, aut officiis quos enim?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ad quam! Minus veritatis in dicta obcaecati odit corporis ut, quod, nemo quia aut nobis ducimus eveniet numquam nulla quo! Aliquam?
+            Tenetur dolorem, esse saepe, accusantium obcaecati omnis iusto a sint incidunt pariatur at necessitatibus veniam ipsa voluptas maiores eveniet fuga nam quasi repellat consequatur? Accusantium dicta optio quasi dolores error!
+            Pariatur aliquid quia ullam dolorem illum, fugiat modi necessitatibus distinctio error, nihil corrupti veniam quasi sed explicabo placeat! Repellendus deserunt aliquam beatae magnam minima vitae omnis soluta, ipsam exercitationem expedita.
+            Laudantium quam quas veniam ullam, deserunt mollitia adipisci? Aperiam nihil eligendi consectetur earum. Accusantium, culpa tempora voluptatum saepe voluptates quaerat sint, maiores delectus ipsam corporis reiciendis qui, magnam aperiam laboriosam.
+            Voluptates repudiandae tempora nostrum pariatur, cumque facere fugit incidunt! Impedit, vitae. Placeat voluptate debitis voluptas dolorum, nemo exercitationem corrupti aut ipsam quidem illum ea, corporis, maiores perspiciatis incidunt ipsa similique.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam ducimus quia perspiciatis excepturi debitis praesentium. Excepturi ipsam omnis tempora eveniet aspernatur, aliquam vero sapiente quod, aut officiis quos enim?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ad quam! Minus veritatis in dicta obcaecati odit corporis ut, quod, nemo quia aut nobis ducimus eveniet numquam nulla quo! Aliquam?
+        Tenetur dolorem, esse saepe, accusantium obcaecati omnis iusto a sint incidunt pariatur at necessitatibus veniam ipsa voluptas maiores eveniet fuga nam quasi repellat consequatur? Accusantium dicta optio quasi dolores error!
+        Pariatur aliquid quia ullam dolorem illum, fugiat modi necessitatibus distinctio error, nihil corrupti veniam quasi sed explicabo placeat! Repellendus deserunt aliquam beatae magnam minima vitae omnis soluta, ipsam exercitationem expedita.
+        Laudantium quam quas veniam ullam, deserunt mollitia adipisci? Aperiam nihil eligendi consectetur earum. Accusantium, culpa tempora voluptatum saepe voluptates quaerat sint, maiores delectus ipsam corporis reiciendis qui, magnam aperiam laboriosam.
+        Voluptates repudiandae tempora nostrum pariatur, cumque facere fugit incidunt! Impedit, vitae. Placeat voluptate debitis voluptas dolorum, nemo exercitationem corrupti aut ipsam quidem illum ea, corporis, maiores perspiciatis incidunt ipsa similique.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam ducimus quia perspiciatis excepturi debitis praesentium. Excepturi ipsam omnis tempora eveniet aspernatur, aliquam vero sapiente quod, aut officiis quos enim?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ad quam! Minus veritatis in dicta obcaecati odit corporis ut, quod, nemo quia aut nobis ducimus eveniet numquam nulla quo! Aliquam?
+    Tenetur dolorem, esse saepe, accusantium obcaecati omnis iusto a sint incidunt pariatur at necessitatibus veniam ipsa voluptas maiores eveniet fuga nam quasi repellat consequatur? Accusantium dicta optio quasi dolores error!
+    Pariatur aliquid quia ullam dolorem illum, fugiat modi necessitatibus distinctio error, nihil corrupti veniam quasi sed explicabo placeat! Repellendus deserunt aliquam beatae magnam minima vitae omnis soluta, ipsam exercitationem expedita.
+    Laudantium quam quas veniam ullam, deserunt mollitia adipisci? Aperiam nihil eligendi consectetur earum. Accusantium, culpa tempora voluptatum saepe voluptates quaerat sint, maiores delectus ipsam corporis reiciendis qui, magnam aperiam laboriosam.
+    Voluptates repudiandae tempora nostrum pariatur, cumque facere fugit incidunt! Impedit, vitae. Placeat voluptate debitis voluptas dolorum, nemo exercitationem corrupti aut ipsam quidem illum ea, corporis, maiores perspiciatis incidunt ipsa similique.
+</p>
+    </section>
+    
+    <script src="./exercicios.js"></script>
+</body>
+</html>
