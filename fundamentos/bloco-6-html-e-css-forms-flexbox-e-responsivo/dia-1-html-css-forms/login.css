@@ -3,13 +3,12 @@ body {
 }
 
 #container{
-    width: 400px;
-    height: 300px;
+    width: 18%;
     background-color: white;
     border-radius: 10px;
-    padding-left: 10px;
-    margin-left: 35%;
-    margin-top: 10%;
+    padding: 20px;
+    margin: 40px auto;
+    
 }
 
 h1 {
