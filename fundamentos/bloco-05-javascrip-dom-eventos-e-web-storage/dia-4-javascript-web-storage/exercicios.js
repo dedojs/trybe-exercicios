@@ -77,10 +77,6 @@ if (typeof Storage !== "undefined") {
   }
   console.log(localStorage.visitas);
 
-  //localStorage.nome = nome
-
-  // Retrieve
-  document.getElementById("body").style.backgroundColor = backgroundColor;
 } else {
   document.getElementById("result").innerHTML =
     "Desculpe, sem suporte para Web Storage";
