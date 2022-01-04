@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css" type="text/css">
+    <title>bloco 06 ex1</title>
+</head>
+<body>
+    <h1>Exercicio 1 de formulários</h1>
+    <form action="" method="get">
+        <label for="inputname">Digite seu nome </label>
+        <input type="text" name="texto" placeholder="digite seu nome" required id="inputname">
+        <br>
+        <label for="inputidade">Idade</label>
+        <input  type="number" placeholder ='Idade' id="inputidade" required name="Idade">
+        <br>
+        <textarea name='comentario' id="inputcomentario" cols="20" rows="10" placeholder="Comentários"></textarea>
+        <br>
+        <input type="checkbox" name="esporte" value="Corrida">  Corrida
+        <input type="checkbox" name="esporte" value="Natação" > Natação
+        <input type="checkbox" name="esporte" value="Ciclismo" checked> Ciclismo
+        <br>
+        <label for='cat1'><input type="radio" id='cat1' name="categoria" value="master A1"> Master A1 = 30 - 34</label>
+        <label for='cat2'><input type="radio" id='cat2' name="categoria" value="master A2"> Master A2 = 35 - 39</label>
+        <label for='cat3'><input type="radio" id='cat3' name="categoria" value="master B1"> Master B1 = 40 - 44</label>
+        <label for='cat4'><input type="radio" id='cat4' name="categoria" value="master B2"> Master B2 = 45 - 49</label>
+        <br>
+        <select name="estado" id="inputestado">
+            <option value="BA">Bahia</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="DF">Brasilia</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RN">Rio Grande do Norte</option>
+        </select>
+        <br>
+        <label>Login</label>
+        <br>
+        <label for="id">Usuário</label>
+        <input name='id'type="text">
+        <br>
+        <label for="senha">Senha</label>
+        <input name='senha' type="password">
+        <br>
+        <input type="file">
+        <br>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
