@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Currículo</title>
+</head>
+<body>
+    <header>
+        <h1>Currículo</h1>
+    </header>
+    <main>
+        <div id="container">
+            <form>
+                <fieldset class="data-field">
+                    <legend>Dados Pessoais</legend>
+                    <div class="line">
+                        <label for="nome">Nome:</label>
+                        <input type="text" required maxlength="40" name="nome" placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="line">
+                        <label for="email">Email:</label>
+                        <input type="text" required maxlength="50" name="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="line">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" required maxlength="11" name="cpf" placeholder="Digite seu cpf">
+                    </div>
+                    <div class="line">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" required maxlength="200" name="endereco" placeholder="Digite seu endereço">
+                    </div>
+                    <div class="line">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" required maxlength="28" name="cidade" placeholder="Digite a cidade onde você mora">
+                    </div>
+                    <div class="line">
+                        <label for="estados">Estados:</label>
+                        <select name="estados" id="estados" required></select>
+                    </div>
+                    <div class="line">
+                        <label for="tipo">Tipo:</label>
+                        <input type="radio" name="tipo" required></input>Casa
+                        <label for="tipo"></label>
+                        <input type="radio" name="tipo" required></input>Apartamento
+                    </div>
+                </fieldset>
+                <fieldset class="data-field">
+                    <legend>Último Emprego</legend>
+                    <div class="line">
+                        <label for="resumo">Resumo do currículo:</label>
+                        <textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" placeholder="Descreva resumidamente seu currículo" required></textarea>
+                    </div>
+                    <div class="line">
+                        <label for="cargo">Cargo:</label>
+                        <input type="text" required maxlength="40" name="cargo" placeholder="Digite o cargo" required>
+                    </div>
+                    <div class="line">
+                        <label for="descCargo">Descrição do Cargo:</label>
+                        <input type="text" required maxlength="500" name="descCargo" placeholder="Descreva seu cargo" required>
+                    </div>
+                    <div class="line">
+                        <label for="dataInicio">Data de início:</label>
+                        <input type="date" name="dataInicio" id="dataInicio" required>
+                    </div>
+                </fieldset>
+                <div id="buttons" >
+                    <button type='submit' class='btn' id="btnEnviar">Enviar</button>
+                    <button type="reset" class='btn'>Limpar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
