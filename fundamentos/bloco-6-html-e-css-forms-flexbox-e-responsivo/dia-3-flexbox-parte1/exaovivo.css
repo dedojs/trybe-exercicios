@@ -28,5 +28,18 @@
     padding: 10px;
     display: flex;
     justify-content: center;
-    
+}
+
+.main-container{
+    background-color: #d6e9fe;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-itens {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
