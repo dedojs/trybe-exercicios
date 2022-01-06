@@ -13,6 +13,19 @@ function criarEstados () {
 }
 criarEstados()
 
+/* $(function() {
+    $('#datepicker').datepicker();
+}); */
+
+$('#datepicker').datepicker({
+    format: "dd/mm/yyyy",
+    todayBtn: true,
+    language: "pt-BR",
+    autoclose: true,
+    todayHighlight: true
+});
+
+/* 
 function enviarManual(event) {
     event.preventDefault()
     validarNome()
@@ -129,3 +142,4 @@ function validarTipo() {
        } 
     }
 }
+ */
