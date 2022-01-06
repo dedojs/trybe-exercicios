@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    color: white;
+    padding: 20px;
+    width: 1000px;
+    /* border: 1px black solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+.menu2 {
+    
+}
+
+.menu-container {
+    background-color: #5995da;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
