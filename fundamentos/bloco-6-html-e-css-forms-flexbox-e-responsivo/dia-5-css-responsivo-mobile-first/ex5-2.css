@@ -53,39 +53,42 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 575px) {
-        body {
-          background-color: rgb(186, 240, 240);
-          font-size: 30px;
-          margin-left: 20px;
-          margin-right: 20px;
-      }
+@media screen and (min-width: 575px){
+  body {
+    background-color: rgb(186, 240, 240);
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+  section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
 
-        figure {
-          max-width: 30%
-        }
+  figure {
+    max-width: 30%
+  }
 
-  };
+  }
 
-  @media screen and (min-width: 900px) {
+
+  @media screen and (min-width: 1020px) {
     body {
       background-color: green;
       font-size: 30px;
       margin-left: 50px;
       margin-right: 50px;
-    }
+  }
 
-    figure {
-      max-width: 40%;
-    }
+  figure {
+    max-width: 30%;
+  }
 
   }
+
+  
     
   
       
