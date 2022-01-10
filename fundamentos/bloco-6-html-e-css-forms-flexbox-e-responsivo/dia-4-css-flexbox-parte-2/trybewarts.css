@@ -27,7 +27,7 @@
     width: 120px;
 }
 
-.login1 {
+.login {
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -48,17 +48,105 @@ main {
 }
 
 .main-container {
+    padding: 20px;
     display: flex;
-    border: 1px solid black;
+    
     justify-content: space-evenly;
+    
 
 }
 
 .form-container {
+    flex-basis: 45%;
+    justify-content: space-between;
+    align-items: center;
+    
+    text-align: center;
+}
 
+.img-container {
+    
 }
 
 .main-container h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.name-container, .email-container{
+    display: flex;
+    justify-content: space-evenly;
+}   
+
+.form-input {
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 80%;
+    margin: 10px auto;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.radio-container {
+    display: flex;
+   justify-content: center;
+}
+
+.radio {
+    display: flex;
+    flex-basis: 30%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.check-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding: 20px;
+    align-items:flex-start;
+    justify-content: space-between;
+    
+}
+
+.check-container label {
+    margin-right: 30px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.text-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left   ;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: grey;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+

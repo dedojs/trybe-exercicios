@@ -16,10 +16,10 @@
             <div class="text">
                 <h1>TrybeWarts</h1>
             </div>
-            <div class='login'>
+            <div class='login-container'>
                 <form>
-                    <input class='login1' placeholder="Login">
-                    <input class='login1' placeholder="Senha">
+                    <input type='text' class='login' placeholder="Login">
+                    <input type='password' class='login' placeholder="Senha">
                     <button class="btn">Logar</button>  
                 </form>
             </div>
@@ -29,13 +29,124 @@
         <div class='main-container'>
             <form class="form-container">
                 <h1>Forms</h1>
-                <input class='login1' name="nome" placeholder="Nome">
-                <input class='login1' name="sobreNome" placeholder="Sobrenome">
-            </form>
+                <div class="name-container">
+                    <input type='text' class='form-input' name="nome" placeholder="Nome">
+                    <input type='text' class='form-input' name="sobreNome" placeholder="Sobrenome">
+                </div>
+                <div class="email-container">
+                    <input type='text' class='form-input' name="email" placeholder="Email">
+                    <select class="form-input">Escolha uma casa:
+                        <option value=''>Escolha uma casa:</option>
+                        <option value='grifnoria'>Grifnória</option>
+                        <option value='sonserina'>Sonserina</option> 
+                        <option value='lufalufa'>Lufa-Lufa</option> 
+                        <option value='Corvinal'>Corvinal</option>    
+                    </select>
+                </div>
+                <hr>
+                <div class="radio-container">
+                    <div class="radio">
+                        <p>Qual a sua família?</p>
+                        <div>
+                            <input type="radio" name="familia" value="Front">
+                            <label for="familia">Família Frontend</label>
+                        </div>
+                        <div>   
+                            <input type="radio" name="familia" value="Back">
+                            <label for="familia">Família Backend</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="familia" value="Full">
+                            <label for="familia">Família FullStack</label>
+                        </div>
+                    </div>
+                    <div class="check-container">
+                        <p>Qual conteúdo você esta com mais vontade de aprender?</p>
+                        <div>
+                            <input type="checkbox" name="conteudo" value="Hofs">
+                            <label for="conteudo">Hofs</label>
+                        
+                            <input type="checkbox" name="conteudo" value="Jest">
+                            <label for="conteudo">Jest</label>
+
+                            <input type="checkbox" name="conteudo" value="Promisses">
+                            <label for="conteudo">Promisses</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conteudo" value="React">
+                            <label for="conteudo">React</label>
+
+                            <input type="checkbox" name="conteudo" value="SQL">
+                            <label for="conteudo">SQL</label>
+
+                            <input type="checkbox" name="conteudo" value="Python">
+                            <label for="conteudo">Python</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="score-container">
+                    <p>Como você avalia a Tribewarts?</p>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">1</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">2</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">3</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">4</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">5</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">6</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">7</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">8</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">9</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="score" value="1">
+                        <label for="score">10</label>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Deixe seu comentário:</p>
+                    <textarea name="comentario" id="textArea" cols="70" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="aceite">Você concorda com o uso das informações acima?</label>
+                    <input type="checkbox" name="aceite" value="aceite">
+                </div>
+                <button class="btn">Enviar</button>
+                </form>
             <div class="img-container">
                 <img src="./imgs/logoprincipal.png" alt="logo Hogwarts">
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer-container">
+            <p>Direitos reservados à Tribewarts@</p>
+        </div>
+    </footer>
 </body>
 </html>
