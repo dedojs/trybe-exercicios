@@ -77,14 +77,22 @@ console.log(allLessons)
 
 // 6 Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
 
-const alunos = () => {
+/* const alunos = () => {
     const alunos1 = allLessons.lesson1.numeroEstudantes
     const alunos2 = allLessons.lesson2.numeroEstudantes
     const alunos3 = allLessons.lesson3.numeroEstudantes
     return(`Total de alunos ${alunos1+alunos2+alunos3}`) 
+} */
+
+const verificarAlunos = () => {
+    let alunos = 0
+    for(let i in allLessons) {
+        alunos += allLessons[i].numeroEstudantes
+    }
+    console.log(`O número total de alunos é ${alunos}`)
 }
 
-console.log(alunos())
+verificarAlunos()
 
 // 7 Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
 /* console.log(getValueByNumber(lesson1, 0));
