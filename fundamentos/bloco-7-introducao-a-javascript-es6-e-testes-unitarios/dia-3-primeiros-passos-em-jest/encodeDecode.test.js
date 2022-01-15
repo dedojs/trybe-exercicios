@@ -2,8 +2,8 @@ const encodeDecode = require('./encodeDecode')
 
 /* Teste se encode e decode são funções; */
 test('Teste de veracidade da função', () => {
-    expect(encodeDecode.encode).toBeDefined()
-    expect(encodeDecode.decode).toBeDefined()
+    expect(typeof encodeDecode.encode).toBe('function')
+    expect(typeof encodeDecode.decode).toBe('function')
 })
 
 /* Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente; */
