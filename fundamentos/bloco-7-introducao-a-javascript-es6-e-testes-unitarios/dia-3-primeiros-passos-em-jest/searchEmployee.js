@@ -40,46 +40,45 @@ const professionalBoard = [
   
   // Pesquisa
   const verifyData = (id, detail) => {
-    let listId = []
-    const user = professionalBoard[0]
-    const listDetail = Object.keys(user)
+    let listId = [];
+    const user = professionalBoard[0];
+    const listDetail = Object.keys(user);
     for(let i of professionalBoard){
-      listId.push(i.id)
-    }
-    let resultId = listId.includes(id)
-    let resultDetail = listDetail.includes(detail)
+      listId.push(i.id);
+    };
+    let resultId = listId.includes(id);
+    let resultDetail = listDetail.includes(detail);
     if(resultId === false) {
-      throw new Error ("ID não identificada")
+      throw new Error ("ID não identificada");
     } else if (resultDetail === false) {
-      throw new Error ("Informação indisponível")
+      throw new Error ("Informação indisponível");
     } 
-  }
-
+  };
 
   const searchEmployee = (id, detail) => {
     // Implemente seu código aqui
     try {
-    verifyData(id, detail)
+    verifyData(id, detail);
     } catch (error) {
       throw error.message
     } finally {
       for(let i in professionalBoard) {
         if(id === professionalBoard[i].id) {
           if(detail === 'firstName') {
-            return (`Id: ${id} ${detail}: ${professionalBoard[i].firstName}`)
+            return (`Id: ${id} ${detail}: ${professionalBoard[i].firstName}`);
           } else if(detail === 'lastName') {
-            return (`Id: ${id} ${detail}: ${professionalBoard[i].lastName}`)
+            return (`Id: ${id} ${detail}: ${professionalBoard[i].lastName}`);
           } else if (detail === 'specialities') {
-            return (`Id: ${id} ${detail}: ${professionalBoard[i].specialities}`)
+            return (`Id: ${id} ${detail}: ${professionalBoard[i].specialities}`);
           } else {
-            throw new Error ("Informação indisponível")
+            throw new Error ("Informação indisponível");
           }
         }
       }
     }
   }; 
 
-  console.log(searchEmployee('4678-2', 'specialities'));
+  console.log(searchEmployee('4678-2', 'firstName'));
 
 
 module.exports = searchEmployee

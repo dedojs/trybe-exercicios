@@ -14,12 +14,12 @@ describe('Teste a função searchEmployee', () => {
         expect(() => searchEmployee('4678-2', 'ambrosio')). toThrowError()
     })
     it('Testando o detail: firstName', () => {
-        expect(searchEmployee('4678-2', 'firstName').match('Id: 4678-2 firstName: Paul'))
+        expect(searchEmployee('4678-2', 'firstName')).toBe('Id: 4678-2 firstName: Paul')
     })
     it('Testando o detail: lastName', () => {
-        expect(searchEmployee('4678-2', 'lastName').match('Id: 4678-2 lastName: Dodds'))
+        expect(searchEmployee('4678-2', 'lastName')).toBe('Id: 4678-2 lastName: Dodds')
     })
     it('Testando o detail: specialities', () => {
-        expect(searchEmployee('4678-2', 'specialities').match('Id: 4678-2 specialities: Backend'))
+        expect(searchEmployee('4678-2', 'specialities')).toBe('Id: 4678-2 specialities: Backend')
     })
 })
