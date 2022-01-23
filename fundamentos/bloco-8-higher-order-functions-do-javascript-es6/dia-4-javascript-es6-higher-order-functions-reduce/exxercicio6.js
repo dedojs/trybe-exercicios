@@ -28,7 +28,7 @@ function studentAverage(arr1, arr2) {
     console.log(createEstudante(i));
   }
 
-  
+  console.log(studentAverage(students, grades))
 }
 
 //studentAverage(students, grades);
