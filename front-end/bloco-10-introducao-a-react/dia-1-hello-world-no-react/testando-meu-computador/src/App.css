@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.hello {
+  background-color: green;
+  text-align: center;
+  color: yellow;
+  font-size: 30px;
+  font-weight: 700;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
