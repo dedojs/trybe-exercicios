@@ -51,7 +51,7 @@ const pokemons = [
             value: 48.0,
             measurementUnit: "kg"
         },
-        image: "http://www.pkparaiso.com/imagenes/xy/sprites/animados/alakazam.gif",
+        image: "https://cdn2.bulbagarden.net/upload/8/88/Spr_5b_065_m.png",
         moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Alakazam_(Pok%C3%A9mon)"
     },
     {

@@ -2,17 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
+}
+
+body {
+  background-image: url('./img/38oAVRI-pokemon-red-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav {
-  background-color: gold;
-  max-width: 700px;
+  background-color: red;
+  max-width: 800px;
   text-align: center;
-  margin: auto;
+  margin-left: 50px;
   padding: 20px;
   box-shadow: 3px 5px 5px 3px;
-  margin-top: 20px;
+  margin-top: 80px;
   border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.poke {
+  width: 200px;
+  margin-bottom: 20px;
 }
 
 .nav h1 {
@@ -25,16 +38,15 @@
 
 img {
   width: 120px;
-  border: 1px black solid;
 }
 
 section {
-  max-width: 650px;
+  max-width: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  background-color: grey;
+  background-color: white;
   border-radius: 20px;
   padding: 10px;
   box-shadow: 3px 5px 5px 3px;
@@ -45,6 +57,9 @@ article h2 {
   margin-top: 0;
   margin-bottom: 5px;
   border: 1px black solid;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
 }
 
 article {
@@ -53,10 +68,10 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(197, 194, 194, 0.931);
+  background-color: rgba(161, 159, 159, 0.856);
   margin-left: 30px;
   padding: 10px;
-  max-width: 400px;
+  max-width: 180px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -71,14 +86,17 @@ article:hover {
 }
 
 .data {
-  border: 1px black solid;
+  border: 2px red solid;
   padding: 5px;
-  
+  border-radius: 5px;
 }
 
 p {
-  border: 2px black solid;
+  border: 1px black solid;
   padding: 2px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
 }
 
 
