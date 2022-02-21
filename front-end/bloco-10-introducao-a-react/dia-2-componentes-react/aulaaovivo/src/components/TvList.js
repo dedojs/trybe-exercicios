@@ -1,18 +1,12 @@
 import React from "react";
-import catalog from "../data";
-import TvShow from "./TvShow";
+import Input from "./Input";
 
 class TvList extends React.Component {
     render() {
         return (
-            <section>
-            {catalog.map((item) => {
-                return (
-                  <TvShow key={item.id} tvShow={item} />
-                )
-              })
-            }
-            </section>      
+          <div>
+            <Input />
+            </div>      
         )
     }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import "./App.css";
 import TvList from './components/TvList';
-
 class App extends React.Component {
   render() {
     return (

@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search label {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
 .app {
   width: 100%;
   background-color: white;
