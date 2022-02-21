@@ -4,6 +4,7 @@ import Thisandblind from "./thisAndblind";
 import Componentcomestado from "./Componentcomestado";
 import Botaonegativo from "./Botaonegativo";
 import Input from "./Input";
+import Password from "./Password";
 
 function handleClick() {
   console.log('clicou no pai')
@@ -27,6 +28,7 @@ class App extends React.Component{
      <Componentcomestado />
      <Botaonegativo />
      <Input />
+     <Password />
     </div>
   );
 }
