@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 body {
@@ -15,7 +14,8 @@ body {
   background-color: red;
   max-width: 800px;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 20px;
   box-shadow: 3px 5px 5px 3px;
   margin-top: 80px;
@@ -69,7 +69,6 @@ article {
   justify-content: center;
   align-items: center;
   background-color: rgba(161, 159, 159, 0.856);
-  margin-left: 30px;
   padding: 10px;
   max-width: 180px;
   margin-top: 20px;
