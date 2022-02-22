@@ -1,0 +1,3 @@
+https://app.betrybe.com/course/front-end/introducao-a-react/componentes-react/0115c033-cfc0-48bc-bcf5-812b599ee79a/o-que-vamos-aprender-/c59e5ded-3ea2-46e9-a9da-c3f2514bfdd8?use_case=side_bar
+
+Bloco 10.2 Introdução REact - Componentes React
