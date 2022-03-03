@@ -1,0 +1,107 @@
+Vamos encarar mais um dia de React ?
+Hoje você vai aprender sobre formulários. Como você já viu, saber capturar eventos e criar formulários que os usam é fundamental para que você esteja preparado para as diferentes demandas do mercado.
+Lembra dos exercícios e projetos envolvendo formulários? Então, fazê-los com React vai ser muito mais legal!
+
+Você será capaz de:
+Criar formulários utilizando sintaxe JSX com as tags : input , textarea , select , form .
+Transmitir informações de componentes filhos para componentes pais via callbacks .
+
+Por que isso é importante?
+Aprofundar seus conhecimentos no React não é uma tarefa fácil. Sabemos que o nível de complexidade que ele traz em um primeiro momento é alto. O importante é que fique claro que essa habilidade vai ser um grande diferencial para vocês no mercado de trabalho e irá ajudar na construção de front-ends ainda mais robustos.
+Aí eu te pergunto: qual aplicação que não demanda a captura de eventos com um onClick ? Qual sistema não tem ao menos um formulário simples, como uma caixa de Login ? Acho que você mesmo já respondeu qual a importância da aula de hoje! 🚀
+
+Conteúdos
+E aqui vamos novamente aos formulários. 🗒️🤣
+Vamos descobrir que os formulários no React se comportam de forma um pouco diferente do HTML padrão. Mas por quê? O state , que você aprendeu ontem, é a chave para essa charada!
+
+Componentes controlados
+No JavaScript "tradicional", que vocês usavam nos primeiros blocos, você fez formulários, certo? Pois bem, se pergunte o seguinte: onde ficavam os dados que vocês inseriam nesses formulários? Os dados dos campos numéricos, de texto, select ... Eles não ficavam em nenhuma variável declarada por você certo?
+Pois então! Se você reparar com um inspect , vai ver que os dados dos campos preenchidos sempre aparecem no próprio DOM quando inseridos. Você acredita que é aí que esses dados são salvos? Sim! No próprio DOM. Meio estranho, certo? Pensando numa aplicação React , onde nós salvaríamos os dados do nosso formulário? Pensando no formulário, lógico, como um componente.
+... No Estado , correto?
+Pois é! Como todos os dados que concernem os componentes do React, os dados de um formulário também devem ser salvos no Estado ! E eis o pulo do gato: a partir do momento que a informação do forms não é mais salva no próprio elemento, no DOM, mas no Estado do componente que o contém, passamos a dizer que esse elemento é um Componente Controlado!
+
+💡 Atenção! Essa nomenclatura, oficial do React, é confusa. Estamos dizendo aqui que o elemento do formulário é um componente controlado. Não estamos falando dos componentes React aqui, mas dos elementos que compõem o formulário! Cuidado para não confundir.
+💡 A extensão do Google Chrome React Developer Tools é incrívelmente útil para se desenvolver aplicativos React! Não deixe de baixá-la.
+Para fixar
+1 - Crie um formulário com um campo select , dois inputs de tipo diferente, uma textarea e faça de um deles um componente controlado, ou seja, elementos do formulário controlados pelo Estado
+2 - Baixe a React Developer Tools e veja, nela, o dado inserido no elemento controlado sendo salvo no Estado.
+
+event handlers genéricos
+Uma excelente forma de criarmos formulários 100% com componentes controlados é fazermos um event handler genérico, capaz de atualizar o estado de todos os componentes com a mesma lógica.
+Copiar
+handleChange({ target }) {
+  const { name } = target;
+  const value = target.type === 'checkbox' ? target.checked : target.value;
+
+  this.setState({
+    [name]: value,
+  });
+}
+O truque é o seguinte:
+Dê a cada elemento um nome que seja igual à respectiva chave no estado do componente
+No handler, recupere a partir do parâmetro event o nome do componente que disparou o evento e o valor associado ao disparo.
+Interpole o nome do componente como chave do estado numa sintaxe como a acima.
+Para fixar
+3 - Faça todos os seus elementos componentes do formulário ficarem 100% controlados. Faça um event handler genérico para lidar com eles.
+4 - Acrescente no seu formulário um input do tipo checkbox e garanta que seu event handler esteja tratando este caso corretamente.
+5 - Busque na documentação de React acerca de formulários (primeiro link da seção de Recursos Adicionais!) como se deve adicionar um input para arquivos . Acrescente um ao seu formulário.
+6 - Encapsule alguns dos seus campos num fieldset . Entenda como ele funciona lendo a documentação .
+
+Transmitindo informações de componente filho para componente pai
+A transmissão de informações de um componente filho para um componente pai é um dos conceitos primordiais de React. Ele se baseia nos seguintes pilares:
+O componente pai detém o Estado e controla completamente como ele será atualizado. Isso significa que as funções que manipularão o estado devem ser declaradas sempre nele mesmo.
+Quando algum componente filho deve passar alguma informação ao componente pai, ele deve receber como props a função que atualiza o estado do pai e dar a ela, como parâmetro, a informação pedida.
+A informação transmitida dessa forma será inserida no estado do componente pai.
+No código abaixo vemos um exemplo disso acontecendo numa aplicação diferente do formulário que estamos vendo: o contador de cliques do qual falamos no primeiro dia do bloco.
+Copiar
+import React from 'react';
+
+class Button extends React.Component {
+  render() {
+    /* A função que altera o estado do componente pai chega
+       ao componente filho via `props`! */
+    const { handleClick } = this.props;
+
+    return (<button type="button" onClick={handleClick} >Contar clique!</button>);
+  }
+}
+
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.handleClick = this.handleClick.bind(this);
+
+    // O componente pai é o dono do estado!
+    this.state = {
+      numeroDeCliques: 0,
+    };
+  }
+
+  /* A função de alterar o estado é definida no componente pai*/
+  handleClick() {
+    this.setState((estadoAnterior) => ({
+      numeroDeCliques: estadoAnterior.numeroDeCliques + 1,
+    }));
+  }
+
+  /* O componente filho recebe a função de alterar estado do pai via `props`,
+     na forma de uma callback */
+  render() {
+    return (
+      <div>
+        <h1>{`${this.state.numeroDeCliques} cliques!`}</h1>
+        <Button handleClick={this.handleClick} />
+      </div>
+    );
+  }
+}
+
+export default App
+Para fixar
+7 - Faça dois de seus campos serem componentes filhos do seu componente de formulário. Garanta que seu estado ainda pertence ao componente pai.
+8 - Faça duas validações em um desses componentes filhos e uma em um outro.
+9 - Crie, no estado do componente pai, um campo formularioComErros que deve ser true caso algum desses componentes tenha erros e false caso contrário.
+🦜 Dica: Se algum dos componentes transmitir true para a função que fará o handle dos erros, qual valor deve ser armazenado no Estado ?
+
+
