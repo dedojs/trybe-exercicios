@@ -1,16 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-
+import Exemplo from './Exemplo';
+import Exemplo1 from './Exemplo1';
+import Exemplo2 from './Exemplo2';
+import { BrowserRouter, Route } from 'react-router-dom';
 export default class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <h4><Link to={'/'}>Curso</Link></h4>
-        <nav>
-          <Link to={'/Exemplo'}>Exemplo 1</Link>
-          <Link to={'/Exemplo1'}>Exemplo 2</Link>
-        </nav>
-      </div>
+      <BrowserRouter>
+        <Route path="/exemplo1" component={Exemplo1}>
+          <Exemplo1 />
+          <p>Testando ate onde vai </p>
+        </Route>
+        <Route path="/exemplo2" component={Exemplo2} />
+        <Route exact path="/" component={Exemplo} />
+      </BrowserRouter>
     );
   }
 }
