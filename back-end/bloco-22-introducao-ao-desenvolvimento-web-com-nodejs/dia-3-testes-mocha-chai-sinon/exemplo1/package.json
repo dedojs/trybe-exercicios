@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "chai": "^4.3.6",
+    "D": "^1.0.0",
+    "mocha": "^10.0.0"
+  },
+  "name": "dia-3-testes-mocha-chai-sinon",
+  "version": "1.0.0",
+  "main": "teste.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha teste.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
