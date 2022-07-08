@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "andre",
+    "password": "12345678",
+    "database": "orm_example",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "andre",
+    "password": "12345678",
+    "database": "orm_example",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "andre",
+    "password": "12345678",
+    "database": "orm_example",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
