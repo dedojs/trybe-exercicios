@@ -1,0 +1,94 @@
+use('test')
+
+db.movies.find({}, {title:1, _id:0, category:1})
+
+//1
+db.movies.find({category:{ $all: ['action', 'adventure']}})
+
+//2
+db.movies.find({
+  category: { $all: ['action', 'sci-fi']},
+  imdbRating: { $gt: 7 }
+})
+
+//3
+db.movies.find({
+  ratings: { $elemMatch: {$gt: 103 }}
+}, {title:1, ratings:1, _id:0})
+
+//4
+db.movies.find({
+  ratings: { $elemMatch: {$gte: 100, $lte: 105 }}
+}, {title:1, ratings:1, _id:0})
+
+//5
+db.movies.find({
+  ratings: { $elemMatch: {$gte: 64, $lte: 105 }},
+  ratings: {$mod: [9, 0]}
+}, {title:1, ratings:1, _id:0})
+
+db.movies.find({
+  ratings: { $elemMatch: {$gte: 64, $lte: 105, $mod: [9, 0] }},
+}, {title:1, ratings:1, _id:0})
+
+// importante visualizar a diferença entre essas duas respostas, a primeira retorna avaliando todos os valores divisiveis por 9
+//na segunda resposta, retorna apenas os numeros na faixa divisiveis por 9
+
+//6
+db.movies.find({
+  category: 'adventure',
+  ratings: {$gt: 103}
+}, {title:1, ratings:1, _id:0, category:1})
+
+/*
+db.movies.find(
+  {
+    ratings: {
+      $elemMatch: { $gt: 103 }
+    },
+    category: { $all: ["adventure"] }
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1,
+    category: 1
+  }
+).pretty();
+*/
+
+//7
+db.movies.find({category: {$size: 2}},{_id: 0, title:1})
+
+//8
+db.movies.find({ratings: {$size: 4}},{_id: 0, title:1, ratings:1})
+
+//9
+db.movies.find({
+  budget: {$mod: [5,0]},
+  category: {$size: 2}
+})
+
+//10
+db.movies.find({$or: [
+  {category: 'sci-fi'},
+  {ratings: {$gt: 199}}
+]
+}, {_id:0, title:1, ratings:1, category:1})
+
+//11
+db.movies.find({
+  ratings: {$size: 4},
+  category: {$in: ['adventure', 'family']},
+  imdbRating: {$gt: 7}
+})
+
+//12
+db.movies.find({
+  description: {$regex: /^The/}
+})
+
+//13
+db.movies.find({
+  description: {$regex: /humanity.$/}
+})

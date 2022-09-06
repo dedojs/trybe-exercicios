@@ -1,0 +1,54 @@
+use('aula-filter-operators')
+
+db.filmes.countDocuments({})
+
+db.filmes.find({ano: {$lt: 1990}}).pretty()
+
+db.filmes.countDocuments({ano: {$lt: 1990}})
+
+db.filmes.countDocuments({ano: {$gte: 1990}})
+
+db.filmes.countDocuments({ano: {$eq: 2015}})
+
+db.filmes.countDocuments({ano: {$in: [2015, 2016]}})
+
+db.filmes.find({ano: {$in: [2015, 2016]}}, {_id:0 })
+
+db.filmes.find({}, {titulo: 1, ano: 1}).sort({ano: -1}).pretty()
+
+db.filmes.deleteOne({titulo: 'Transformers: The Last Knight'})
+
+db.filmes.deleteMany({ano: 1968})
+
+//desafio aula ao vivo
+//1
+db.filmes.find({}, {"avaliacao.ruim":0, "avaliacao.medio":0}).sort({diretor: 1, titulo:1, ano: -1, "avaliacao.bom": -1})
+
+//2
+db.filmes.find({$and: [{ diretor: 'Quentin Tarantino'}, {'avaliacao.bom': {$gt: 5, $lt: 10}}]});
+
+//3
+db.filmes.find({$or: [{ diretor: 'Quentin Tarantino'}, {'avaliacao.bom': {$gt: 5, $lt: 10}}]});
+
+//4
+db.filmes.find({$and: [{ano: 2014}, {'avaliacao.ruim': {$not: {$gt: 5, $lt: 10}}}]})
+
+//5
+db.filmes.find({ ano: {$in: [2001, 1968, 1995]}})
+
+//6
+db.filmes.find({ ano: {$nin: [2013, 2008]}})
+
+//7
+db.filmes.deleteMany({ ano: 2001})
+
+//8
+db.filmes.find({ diretor: 'Steven Spielberg', 
+  $nor: [
+    {titulo: 'Indiana Jones e a Última Cruzada'},
+    {ano: 1989}
+  ]})
+
+
+
+
